@@ -37,8 +37,12 @@ This project is simply a **Linux port / reinterpretation**.
 2. Copy (or symlink) it into your eww config directory:
    ```bash
    cd eww_modern-clock
-   cp -r * ~/.config/eww/
-3. Start the widget:
+   cp -r eww/* ~/.config/eww/
+3. Install the required fonts:
+   ```bash
+   sudo cp fonts/* /usr/share/fonts/
+   fc-cache -fv
+4. Start the widget:
    ```bash
    eww daemon
    eww open clock
