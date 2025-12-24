@@ -1,6 +1,6 @@
 (defpoll time :interval "10s" "date '+%H:%M'")
-(defpoll day :interval "1h" "date '+%A' | tr '[:lower:]' '[:upper:]'")
-(defpoll date :interval "1h" "date '+%d %B, %Y.'")
+(defpoll day :interval "1m" "date '+%A' | tr '[:lower:]' '[:upper:]'")
+(defpoll date :interval "1m" "date '+%d %B, %Y.'")
 
 (defwidget mond_clock []
   (box
